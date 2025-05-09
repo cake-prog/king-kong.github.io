@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>меню бургер</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="top_header">
+                <ul>
+                    <li class="top_header_a"><a href="">Доставка и оплата</a></li>
+                    <li class="top_header_a"><a href="">Гарантия и возврат</a></li>
+                    <li class="top_header_a"><a href="">EN</a></li>
+                </ul>
+            </div>
+            <div class="header_container">
+                <a href="" class="header_logo">
+                    <img src="Logo.png" alt="">
+                </a>
+                <div class="header_menu menu">
+                    <div class="menu_icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu_body">
+                        <ul class="menu__list">
+                            <li><a href="" class="menu_link">Каталог</a></li>
+                            <li><a href="" class="menu_link">О компании</a></li>
+                            <li><a href="" class="menu_link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="/search" method="get">
+                            <input type="text" name="query" id="query">
+                            <button type="submit" id="searching"><img src="search-normal.png" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="basket">
+                        <a href=""><img src="basket.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="burger_menu" id="burger_menu">
+                        <ul>
+                            <li><a href="" class="menu_link">Каталог</a></li>
+                            <li><a href="" class="menu_link">О компании</a></li>
+                            <li><a href="" class="menu_link">Контакты</a></li>
+                        </ul>
+                        <form action="/search" method="get">
+                            <input type="text" name="query" id="query">
+                            <button type="submit" id="searching"><img src="search-normal.png" alt=""></button>
+                        </form>
+                </div>
+                <button id="click_burger"><img src="Menu.png" alt="" class="burger_menu_img"></button>
+            </div>
+        </header>
+        <main class="main">
+            <h1 class="results">Результаты поиска</h1>
+            <div class="goods">
+                <div class="first">
+                    <div class="one_two">
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG1.png" alt="">
+                                <div class="sale_div"><a href="" class="sale">Акция</a></div>
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Встраиваемый светильник Markt</p>
+                            <div class="price">
+                                <p class="orange">3 490 ₽</p>
+                                <p>5 060 ₽</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG2.png" alt="">
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Линейный светильник ARG</p>
+                            <div class="price">
+                                <p class="orange">6 700 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three_four">
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG3.png" alt="">
+                                <div class="sale_div"><a href="" class="sale">Акция</a></div>
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Сведодиодный светильник</p>
+                            <div class="price">
+                                <p class="orange">5 060 ₽</p>
+                                <p>6 060 ₽</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG1.png" alt="">
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Встраиваемый светильник Markt</p>
+                            <div class="price">
+                                <p>3 490 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="five_six">
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG2.png" alt="">
+                                <div class="sale_div"><a href="" class="sale">Акция</a></div>
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Линейный светильник ARG</p>
+                            <div class="price">
+                                <p class="orange">6 700 ₽</p>
+                                <p>6 700 ₽</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG3.png" alt="">
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Сведодиодный светильник</p>
+                            <div class="price">
+                                <p>5 060 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seven_eight">
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG1.png" alt="">
+                                <div class="sale_div"><a href="" class="sale">Акция</a></div>
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Встраиваемый светильник Markt</p>
+                            <div class="price">
+                                <p class="orange">3 490 ₽</p>
+                                <p>6 060 ₽</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="picturs">
+                                <img src="products/IMG2.png" alt="">
+                                <div class="descrip_div"><a href="" class="descrip">Подробнее</a></div>
+
+                            </div>
+                            <p>Линейный светильник ARG</p>
+                            <div class="price">
+                                <p>6 700 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <div>
+                <div class="one">
+                    <img src="Logo.png" alt="">
+                    <p>Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия
+                        предоставления услуг</p>
+                </div>
+                <div class="two">
+                    <div>
+                        <p style="font-weight: 600;">Адрес</p>
+                        <p>Текст Текст Текст</p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">Контакты</p>
+                        <p>Email: urban.dwelling@yandex.com</p>
+                        <p>Телефон: 8 (999) 999-99-99</p>
+                    </div>
+                </div>
+                <div class="three">
+                    <p style="font-weight: 600;">Услуги</p>
+                    <ul>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Доставка и оплата</a></li>
+                        <li><a href="">Гарантия и возврат</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="four">
+                    <a href="">Публичная оферта</a>
+                    <a href="">Политика персональных данных</a>
+                    <div>
+                        <img src="carts/Frame.png" alt="">
+                        <img src="carts/Frame(1).png" alt="">
+                        <img src="carts/master card.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

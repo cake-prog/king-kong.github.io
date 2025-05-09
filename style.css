@@ -1,0 +1,496 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Задайте ширину относительно родителя */
+  margin: 0 auto;
+  /* Центрирование */
+}
+.header .top_header {
+  display: flex;
+  background-color: black;
+  height: 35px;
+  justify-content: center;
+  width: 100%;
+  /* Задайте ширину относительно родителя */
+  margin: 0 auto;
+  /* Центрирование */
+}
+.header .top_header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+  width: 80%;
+  gap: 70px;
+}
+.header .top_header ul .top_header_a a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+@media (max-width: 1600px) {
+  .header .top_header ul .top_header_a a {
+    font-size: 13px;
+  }
+}
+.header .header_container {
+  display: flex;
+  height: 80px;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  /* Задайте ширину относительно родителя */
+  margin: 0 auto;
+  /* Центрирование */
+}
+@media (max-width: 1330px) {
+  .header .header_container {
+    justify-content: space-between;
+  }
+}
+.header .header_container .burger_menu_img {
+  display: none;
+}
+@media (max-width: 1330px) {
+  .header .header_container .burger_menu_img {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+}
+.header .header_container .burger_menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(29, 29, 29);
+  padding: 40px;
+  flex-direction: column;
+  width: 100%;
+}
+.header .header_container .burger_menu ul {
+  list-style-type: none;
+}
+.header .header_container .burger_menu ul li {
+  margin-bottom: 10px;
+}
+.header .header_container .burger_menu ul li a {
+  text-decoration: none;
+  color: #E45302;
+}
+.header .header_container .header_logo img {
+  width: 217px;
+  height: 56px;
+}
+.header .header_container .header_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 1330px) {
+  .header .header_container .header_menu {
+    display: none;
+  }
+}
+.header .header_container .header_menu .menu_body .menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+@media (max-width: 1450px) {
+  .header .header_container .header_menu .menu_body .menu__list {
+    gap: 50px;
+  }
+}
+.header .header_container .header_menu .menu_body .menu__list li {
+  list-style-type: none;
+}
+.header .header_container .header_menu .menu_body .menu__list li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (max-width: 1600px) {
+  .header .header_container .header_menu .menu_body .menu__list li a {
+    font-size: 13px;
+  }
+}
+.header .header_container .header_menu .menu_body .menu__list li a:hover {
+  color: #E45302;
+}
+.header .header_container .header_menu .lamp a {
+  color: black;
+  text-decoration: none;
+}
+.header .header_container .search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.header .header_container .search form input[type=text] {
+  opacity: 0;
+  /* Изначальная непрозрачность */
+  visibility: hidden;
+  /* Изначально скрыт */
+  transition: opacity 0.5s ease;
+  /* Переход для opacity */
+  height: 40px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+@media (max-width: 1450px) {
+  .header .header_container .search form input[type=text] {
+    width: 130px;
+    height: 30px;
+  }
+}
+.header .header_container .search form button {
+  background-color: white;
+  border: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: "korataki";
+  src: url(korataki_bold.otf);
+}
+.main .results {
+  font-size: 44px;
+  font-family: "Korataki", sans-serif;
+  line-height: 140%;
+  margin-top: 20px;
+  padding-right: 260px;
+  padding-left: 260px;
+}
+.main .goods {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.main .goods .first,
+.main .goods .second {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+@media (max-width: 1330px) {
+  .main .goods .first,
+  .main .goods .second {
+    flex-direction: column;
+  }
+}
+.main .goods .first .one_two,
+.main .goods .first .three_four,
+.main .goods .first .five_six,
+.main .goods .first .seven_eight,
+.main .goods .second .one_two,
+.main .goods .second .three_four,
+.main .goods .second .five_six,
+.main .goods .second .seven_eight {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.main .goods .first .one_two .product .picturs,
+.main .goods .first .three_four .product .picturs,
+.main .goods .first .five_six .product .picturs,
+.main .goods .first .seven_eight .product .picturs,
+.main .goods .second .one_two .product .picturs,
+.main .goods .second .three_four .product .picturs,
+.main .goods .second .five_six .product .picturs,
+.main .goods .second .seven_eight .product .picturs {
+  display: flex;
+  position: relative;
+  width: 320px;
+  height: 477px;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+@media (max-width: 770px) {
+  .main .goods .first .one_two .product .picturs,
+  .main .goods .first .three_four .product .picturs,
+  .main .goods .first .five_six .product .picturs,
+  .main .goods .first .seven_eight .product .picturs,
+  .main .goods .second .one_two .product .picturs,
+  .main .goods .second .three_four .product .picturs,
+  .main .goods .second .five_six .product .picturs,
+  .main .goods .second .seven_eight .product .picturs {
+    width: 155px;
+    height: 320px;
+  }
+}
+.main .goods .first .one_two .product .picturs .sale_div,
+.main .goods .first .three_four .product .picturs .sale_div,
+.main .goods .first .five_six .product .picturs .sale_div,
+.main .goods .first .seven_eight .product .picturs .sale_div,
+.main .goods .second .one_two .product .picturs .sale_div,
+.main .goods .second .three_four .product .picturs .sale_div,
+.main .goods .second .five_six .product .picturs .sale_div,
+.main .goods .second .seven_eight .product .picturs .sale_div {
+  width: 100%;
+}
+.main .goods .first .one_two .product .picturs .sale_div .sale,
+.main .goods .first .three_four .product .picturs .sale_div .sale,
+.main .goods .first .five_six .product .picturs .sale_div .sale,
+.main .goods .first .seven_eight .product .picturs .sale_div .sale,
+.main .goods .second .one_two .product .picturs .sale_div .sale,
+.main .goods .second .three_four .product .picturs .sale_div .sale,
+.main .goods .second .five_six .product .picturs .sale_div .sale,
+.main .goods .second .seven_eight .product .picturs .sale_div .sale {
+  display: flex;
+  padding: 8px 40px 8px 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  width: 50px;
+}
+@media (max-width: 770px) {
+  .main .goods .first .one_two .product .picturs .sale_div .sale,
+  .main .goods .first .three_four .product .picturs .sale_div .sale,
+  .main .goods .first .five_six .product .picturs .sale_div .sale,
+  .main .goods .first .seven_eight .product .picturs .sale_div .sale,
+  .main .goods .second .one_two .product .picturs .sale_div .sale,
+  .main .goods .second .three_four .product .picturs .sale_div .sale,
+  .main .goods .second .five_six .product .picturs .sale_div .sale,
+  .main .goods .second .seven_eight .product .picturs .sale_div .sale {
+    width: 30px;
+    padding: 8px 30px 8px 20px;
+  }
+}
+.main .goods .first .one_two .product .picturs .descrip_div,
+.main .goods .first .three_four .product .picturs .descrip_div,
+.main .goods .first .five_six .product .picturs .descrip_div,
+.main .goods .first .seven_eight .product .picturs .descrip_div,
+.main .goods .second .one_two .product .picturs .descrip_div,
+.main .goods .second .three_four .product .picturs .descrip_div,
+.main .goods .second .five_six .product .picturs .descrip_div,
+.main .goods .second .seven_eight .product .picturs .descrip_div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 120%;
+}
+.main .goods .first .one_two .product .picturs .descrip_div .descrip,
+.main .goods .first .three_four .product .picturs .descrip_div .descrip,
+.main .goods .first .five_six .product .picturs .descrip_div .descrip,
+.main .goods .first .seven_eight .product .picturs .descrip_div .descrip,
+.main .goods .second .one_two .product .picturs .descrip_div .descrip,
+.main .goods .second .three_four .product .picturs .descrip_div .descrip,
+.main .goods .second .five_six .product .picturs .descrip_div .descrip,
+.main .goods .second .seven_eight .product .picturs .descrip_div .descrip {
+  display: flex;
+  padding: 8px 40px 8px 40px;
+  border-radius: 20px;
+  background-color: #E45302;
+  color: white;
+  text-decoration: none;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 770px) {
+  .main .goods .first .one_two .product .picturs .descrip_div .descrip,
+  .main .goods .first .three_four .product .picturs .descrip_div .descrip,
+  .main .goods .first .five_six .product .picturs .descrip_div .descrip,
+  .main .goods .first .seven_eight .product .picturs .descrip_div .descrip,
+  .main .goods .second .one_two .product .picturs .descrip_div .descrip,
+  .main .goods .second .three_four .product .picturs .descrip_div .descrip,
+  .main .goods .second .five_six .product .picturs .descrip_div .descrip,
+  .main .goods .second .seven_eight .product .picturs .descrip_div .descrip {
+    width: 40%;
+  }
+}
+.main .goods .first .one_two .product p,
+.main .goods .first .three_four .product p,
+.main .goods .first .five_six .product p,
+.main .goods .first .seven_eight .product p,
+.main .goods .second .one_two .product p,
+.main .goods .second .three_four .product p,
+.main .goods .second .five_six .product p,
+.main .goods .second .seven_eight .product p {
+  margin-bottom: 12px;
+}
+.main .goods .first .one_two .product .price,
+.main .goods .first .three_four .product .price,
+.main .goods .first .five_six .product .price,
+.main .goods .first .seven_eight .product .price,
+.main .goods .second .one_two .product .price,
+.main .goods .second .three_four .product .price,
+.main .goods .second .five_six .product .price,
+.main .goods .second .seven_eight .product .price {
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.main .goods .first .one_two .product .price p,
+.main .goods .first .three_four .product .price p,
+.main .goods .first .five_six .product .price p,
+.main .goods .first .seven_eight .product .price p,
+.main .goods .second .one_two .product .price p,
+.main .goods .second .three_four .product .price p,
+.main .goods .second .five_six .product .price p,
+.main .goods .second .seven_eight .product .price p {
+  font-size: 22px;
+}
+.main .goods .first .one_two .product .price .orange,
+.main .goods .first .three_four .product .price .orange,
+.main .goods .first .five_six .product .price .orange,
+.main .goods .first .seven_eight .product .price .orange,
+.main .goods .second .one_two .product .price .orange,
+.main .goods .second .three_four .product .price .orange,
+.main .goods .second .five_six .product .price .orange,
+.main .goods .second .seven_eight .product .price .orange {
+  color: #E45302;
+}
+.main .goods .first .one_two .product img,
+.main .goods .first .three_four .product img,
+.main .goods .first .five_six .product img,
+.main .goods .first .seven_eight .product img,
+.main .goods .second .one_two .product img,
+.main .goods .second .three_four .product img,
+.main .goods .second .five_six .product img,
+.main .goods .second .seven_eight .product img {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+.main .goods .three_four {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.main .goods .three_four .product .picturs {
+  display: flex;
+  position: relative;
+  width: 320px;
+  height: 477px;
+}
+.main .goods .three_four .product .picturs img {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 20px;
+  gap: 20px;
+}
+@media (max-width: 770px) {
+  .footer div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer div div {
+  display: flex;
+  flex-direction: row;
+}
+.footer div div .one {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.footer div div .one img {
+  width: 239px;
+  height: 62px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1450px) {
+  .footer div div .one img {
+    margin-bottom: 20px;
+  }
+}
+.footer div div .one p {
+  color: gray;
+  margin-bottom: 40px;
+}
+.footer div div .two {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.footer div div .two div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.footer div div .two div p {
+  color: white;
+  margin-bottom: 20px;
+}
+@media (max-width: 1450px) {
+  .footer div div .two div p {
+    margin-bottom: 10px;
+  }
+}
+.footer div div .three {
+  display: flex;
+  flex-direction: column;
+}
+.footer div div .three p {
+  color: white;
+}
+.footer div div .three ul li {
+  margin-bottom: 20px;
+}
+.footer div div .three ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer div div .three ul li a:hover {
+  color: #E45302;
+}
+.footer div .four {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.footer div .four a {
+  display: flex;
+  color: gray;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -9,9 +9,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* Задайте ширину относительно родителя */
   margin: 0 auto;
-  /* Центрирование */
 }
 .header .top_header {
   display: flex;
@@ -19,9 +17,7 @@
   height: 35px;
   justify-content: center;
   width: 100%;
-  /* Задайте ширину относительно родителя */
   margin: 0 auto;
-  /* Центрирование */
 }
 .header .top_header ul {
   list-style-type: none;
@@ -52,9 +48,7 @@
   align-items: center;
   position: relative;
   width: 70%;
-  /* Задайте ширину относительно родителя */
   margin: 0 auto;
-  /* Центрирование */
 }
 @media (max-width: 1330px) {
   .header .header_container {
@@ -144,11 +138,8 @@
 }
 .header .header_container .search form input[type=text] {
   opacity: 0;
-  /* Изначальная непрозрачность */
   visibility: hidden;
-  /* Изначально скрыт */
   transition: opacity 0.5s ease;
-  /* Переход для opacity */
   height: 40px;
   width: 200px;
   border: 2px solid black;
